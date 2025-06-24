@@ -5,6 +5,8 @@ from google.genai import types
 from dotenv import load_dotenv
 from uuid import uuid4
 import os
+import eventlet
+eventlet.monkey_patch()
 
 load_dotenv()
 
